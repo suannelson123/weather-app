@@ -45,7 +45,6 @@ const Weather = () => {
                 alert(data.message)
                 return;
             }
-            console.log(data)
             const icon = allIcons[data.weather[0].icon] || clearIcon
             setWeatherData({
                 humidity: data.main.humidity,
